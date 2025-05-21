@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Science Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.10/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <link rel="stylesheet" href="./assets/CSS/dataScience.css">
+  <link rel="stylesheet" href="../Home/CSS/home.css">
+</head>
+<body>
+    <!-- ##########################################  Navbar Start ############################################### -->
+    <header class="header" id="header-container"></header>
+    <!-- ##########################################  Navbar End ########################################### -->
+  
+
+  <div style="width: 100%">
+
+
+
+    <section>
+      <div class="hero-DS" data-aos="fade-down">
+        <div class="image-container-DS">
+          <img src="./assets/Images/kie_square_DS_banner2.jpg" class="img-fluid" alt="Background Image" />
+        </div>
+        <div class="hero-content-DS" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+          <h1 class="animated-text-DS" data-aos="zoom-in" data-aos-delay="200">
+            <span class="">Data Science</span>
+          </h1>
+          <h5 class="animated-text2-DS mt-2" data-aos="zoom-in" data-aos-delay="400" style="width: 85%; ">
+            <span>
+              We empower organizations with robust and scalable Data Engineering solutions to streamline data flow,
+              integrate diverse sources, and enable seamless data-driven decision-making.
+            </span>
+          </h5>
+
+        </div>
+      </div>
+    </section>
+
+
+    <div class="">
+      <div class="logo-wrapper">
+        <div class="logo-track" data-aos="fade-up">
+
+          <img src="./assets/Images/sas_logo.png" alt="sas" class="logoDS sasLogo " data-bs-toggle="tooltip"
+            data-bs-placement="top" title="SAS">
+          <img src="./assets/Images/1.png" alt="pandas " class="logoDS" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="Pandas">
+          <img src="./assets/Images/2.png" alt="sklearn " class="logoDS" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="Sklearn">
+          <img src="./assets/Images/7.png" alt="PostgreSQL " class="logoDS postgreLogo" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="PostgreSQL">
+          <img src="./assets/Images/3.png" alt="matplotlib " class="logoDS" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="Matplotlib">
+          <img src="./assets/Images/anaconda-logo.png" alt="anaconda " class="logoDS" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="Anaconda">
+          <img src="./assets/Images/9 Py.jpeg" alt="Python " class="logoDS" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="Python">
+          <img src="./assets/Images/numpy logo.png" alt="numpy " class="logoDS" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="Numpy">
+          <img src="./assets/Images/9.png" alt="SciPy " class="logoDS" data-bs-toggle="tooltip" data-bs-placement="top"
+            title="SciPy">
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- ############# Circle Section start############### -->
+
+  <section class="py-5">
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="animated-text h1home mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <span class="">Our Core Offerings </span>
+          </h3>
+
+        </div>
+      </div>
+      <div class="row position-relative">
+        <div class="col-lg-6 col-md-12 py-5">
+
+          <div class="circle-container">
+            <!-- <svg width="500" height="500">
+              <path d="M250,30 A220,220 0 0,1 470,250" stroke="black" stroke-width="3" fill="none" />
+              <path d="M470,250 A220,220 0 0,1 250,470" stroke="black" stroke-width="3" fill="none" />
+              <path d="M250,470 A220,220 0 0,1 30,250" stroke="black" stroke-width="3" fill="none" />
+              <path d="M30,250 A220,220 0 0,1 250,30" stroke="black" stroke-width="3" fill="none" />
+            </svg> -->
+
+            <div class="circle" data-index="0" onclick="showDescription(this)">
+
+              Decision <br> Inteligence
+            </div>
+            <div class="circle" data-index="1" onclick="showDescription(this)">
+              Big Data <br>Analytics
+
+            </div>
+            <div class="circle" data-index="2" onclick="showDescription(this)">
+
+              Solution <br> implementation
+            </div>
+            <div class="circle" data-index="3" onclick="showDescription(this)">
+
+              Data <br>Mining
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 border-start border-secondary modal-sm px-lg-5">
+          <div class=" main-content-circle py-5">
+            <h4 id="title" class="fw-bold">Decision Inteligence</h4>
+            <p id="description">
+
+              We help organizations navigate complex business landscapes with Decision Intelligence—an advanced approach that combines data science, machine learning, and domain expertise to automate and optimize decision-making processes. Our solutions not only guide leaders to make informed decisions but also ensure that these decisions align with the long-term strategic objectives of the organization. By integrating predictive analytics, scenario planning, and real-time data analysis, KiE Square empowers businesses to stay ahead of the competition and respond to market changes dynamically.
+
+
+            </p>
+          </div>
+        </div>
+        <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="modalDescription">
+                Description goes here...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ############# Circle Section end############### -->
+  <section class="carousel-container" id="scheduleContainer">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="animated-text h1home d-flex justify-content-center mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <span class="">Our Products</span>
+        </h3>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-6 col-lg-5">
+        <div class="demo-schedule-option">
+          <form class="emailDemo">
+            <div class="input-group mb-3">
+              <input type="email" class="scheduleEmail form-control" placeholder="Enter email" required />
+              <button class="demoBtn" type="submit">Schedule for Demo</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-container parent-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-12">
+              <h4 id="title" class="fw-bold">
+                Digi-Cadence
+              </h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="video-container">
+                <div class="video-player">
+                  <video controls autoplay muted width="100%" height="auto">
+                    <source type="video/mp4" src="../video/digi-cadence.mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="swiper-container child-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="carousel-content">
+                      <span class="carousel-title">In today's competitive digital landscape, knowing where your brand
+                        stands
+                        is
+                        key to staying ahead.
+                        <strong>Digi-Cadence (DC)</strong>, part of the <strong>KiE Digital Multiverse
+                          (KiEVerse)</strong>,
+                        empowers businesses with a <strong>structured
+                          framework</strong> to evaluate and enhance their <strong>digital maturity</strong>.</span>
+                      <p class="mb-2">With a data-driven approach, Digi-Cadence provides <strong>comprehensive
+                          assessments,
+                          strategic
+                          insights, and
+                          industry benchmarks</strong> to help brands:</p>
+                      <ul class="carousel-list-content">
+
+                        <li><strong>Measure digital presence</strong> and track performance across multiple channels.
+                        </li>
+                        <li><strong>Assess digital capabilities</strong>, identifying strengths and gaps.</li>
+                        <li><strong>Optimize digital investments</strong> for maximum ROI.</li>
+                        <li><strong>Benchmark against competitors</strong> and industry standards.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel-content">
+                      <span class="carousel-title-highlight">Key Features</span>
+
+                      <ul class="carousel-list-content">
+                        <li><strong>100+ Metrics</strong> - In-depth evaluation of brand performance</li>
+                        <li><strong>Cadence Score Categories</strong> - Track performance across <strong>Marketplace,
+                            Digital
+                            Spends, Social Watch, and
+                            Organic Performance.</strong>
+                        </li>
+                        <li><strong>Scalable & Customizable</strong> - Analyze up to <strong>150 brands</strong> with
+                          unlimited
+                          categories.</li>
+                        <li><strong>Actionable Insights</strong> - Custom dashboards for real-time monitoring.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel-content">
+                      <span class="carousel-title-highlight">Benefits from Digi-Cadence
+                      </span>
+                      <ul class="carousel-list-content">
+                        <li><strong>Business Leaders</strong> - Align digital strategy with growth objectives.</li>
+                        <li><strong>CMOs & Marketing Teams</strong> - Maximize ROI and optimize campaigns. </li>
+                        <li><strong>Digital Heads</strong> - Enhance digital capabilities and innovation.</li>
+                        <li><strong>Brand Managers</strong> - Track and refine brand positioning across digital
+                          touchpoints.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-child"></div>
+                <div class="swiper-button-prev child-nav"></div>
+                <div class="swiper-button-next child-nav"></div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-12">
+              <h4 id="title" class="fw-bold">
+                Spend & Sales Forecast Simulator
+              </h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="video-container">
+                <div class="video-player">
+                  <img src="../video/Simulator-1.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="swiper-container child-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="carousel-content">
+                      <span class="carousel-title">Achieving <strong>financial excellence</strong> requires more than
+                        intuition—it
+                        demands <strong>accurate
+                          forecasting and strategic planning</strong>. The <strong>Spend & Sales Forecast
+                          Simulator</strong>, part
+                        of the <strong>KiE Digital
+                          Multiverse (KiEVerse)</strong> is powered by <strong>PowerBI</strong>, provides
+                        <strong>precise
+                          projections</strong> to help businesses <strong>optimize
+                          budgets, enhance ROI, and drive smarter financial decisions.</strong>
+                      </span>
+                      <p class="mb-2">With <strong>advanced analytics and historical data insights</strong>, the
+                        Simulator enables you to:
+                      </p>
+                      <ul class="carousel-list-content">
+
+                        <li><strong>Forecast sales & spending</strong> based on event-driven vs. non-event months.
+                        </li>
+                        <li><strong>Leverage historical trends</strong> for accurate and data-backed budget planning.
+                        </li>
+                        <li><strong>Optimize return on investment (ROI)</strong> with scenario-based insights.
+                        </li>
+                        <li><strong>Allocate budgets effectively</strong> across multiple platforms for maximum impact.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel-content">
+                      <span class="carousel-title-highlight">Key Features</span>
+
+                      <ul class="carousel-list-content">
+                        <li><strong>Event & Non-Event Analysis</strong> - Tailor forecasts based on market conditions.
+                        </li>
+                        <li><strong>Predefined Forecast Model</strong> - Calculate ROI, min/max values, and L3M trends.
+                        </li>
+                        <li> <strong>Data-Driven Budgeting</strong> - Receive platform-specific budget recommendations.
+                        </li>
+                        <li><strong>Scenario Analysis</strong> - Explore different forecasting models for strategic
+                          planning.
+                        </li>
+                        <li><strong>PowerBI Integration</strong> - Advanced data visualization for actionable insights.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel-content">
+                      <span class="carousel-title-highlight">Benefits from the Simulator:
+                      </span>
+                      <ul class="carousel-list-content">
+                        <li><strong>Finance Teams</strong> - Plan budgets with confidence and improve financial
+                          accuracy.
+                        </li>
+                        <li><strong>Marketing & Sales Heads</strong> - Align spend with projected sales for higher
+                          efficiency.
+                        </li>
+                        <li> <strong>Business Leaders</strong> - Make informed strategic decisions based on real-time
+                          insights.
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-pagination swiper-pagination-child"></div>
+                <div class="swiper-button-prev child-nav"></div>
+                <div class="swiper-button-next child-nav"></div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-12">
+              <h4 id="title" class="fw-bold">
+                Multi-Channel Attribution
+              </h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="video-container">
+                <div class="video-player">
+                  <img src="../video/MMM-Dashboard-2.png" alt="" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="swiper-container child-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="carousel-content">
+                      <span class="carousel-title">Understanding <strong>which marketing channels drive the highest
+                          returns</strong> is essential for maximizing impact. The <strong>Multi-Channel Attribution
+                          tool</strong>
+                        provides a <strong>comprehensive analysis of brand performance</strong>, helping marketers
+                        <strong>evaluate spend
+                          efficiency, ROI, and sales
+                          impact</strong> across various platforms.
+                      </span>
+                      <p class="mb-2">With <strong>data-driven insights and visualization</strong>, this tool enables
+                        you
+                        to:
+                      </p>
+                      <ul class="carousel-list-content">
+
+                        <li><strong>Track marketing spend & volume</strong> across multiple platforms.</li>
+                        <li><strong>Measure ROI effectiveness</strong> to identify high-performing channels.
+                        </li>
+                        <li><strong>Analyze marketing elasticity</strong> to understand the impact of spend changes on
+                          sales.</li>
+                        <li><strong>Optimize discount strategies</strong> for maximum sales without compromising
+                          profitability.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel-content">
+                      <span class="carousel-title-highlight">Key Features</span>
+
+                      <ul class="carousel-list-content">
+                        <li><strong>Marketing Mix Modeling Dashboards</strong> - Gain a holistic view of brand spend
+                          allocation.
+                        </li>
+                        <li><strong>ROI Analytics</strong> - Assess the return on investment for each marketing channel.
+                        </li>
+                        <li><strong>Elasticity Insights</strong> - Understand how spend variations affect sales volume.
+                        </li>
+                        <li><strong>Discount & Volume Impact Analysis</strong> - Optimize promotional strategies for
+                          profitability.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel-content">
+                      <span class="carousel-title-highlight">Benefits from Multi-Channel Attribution?
+                      </span>
+                      <ul class="carousel-list-content">
+                        <li><strong>Marketing Teams</strong> - Allocate budgets strategically across high-performing
+                          platforms.
+                        </li>
+                        <li><strong>Finance & Strategy Teams</strong> - Evaluate marketing investments and
+                          profitability.
+                        </li>
+                        <li><strong>Brand Managers</strong> - Fine-tune promotional activities for sustainable growth.
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-pagination swiper-pagination-child"></div>
+                <div class="swiper-button-prev child-nav"></div>
+                <div class="swiper-button-next child-nav"></div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-12">
+              <h4 id="title" class="fw-bold">
+                Meta 360
+              </h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="video-container">
+                <div class="video-player">
+                  <video controls autoplay muted width="100%" height="auto">
+                    <source type="video/mp4" src="../video/meta360.mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="swiper-container child-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="carousel-content">
+                      <span class="carousel-title">In today's fast-paced e-commerce landscape, platforms like
+                        <strong>Amazon,
+                          Flipkart, Nykaa, and Blinkit</strong> dominate the market. With <strong>thousands of SKUs,
+                          evolving
+                          algorithms, and aggressive competition,</strong> brands need more than just performance
+                        tracking—they
+                        need <strong>deep market insights</strong> to stay ahead.
+                      </span>
+                      <p><strong>Meta</strong> is a <strong>cutting-edge e-commerce analytics tool</strong>
+                        that
+                        helps brands <strong>monitor, analyze, and adapt</strong> by offering <strong>real-time
+                          competitive
+                          intelligence and trend analysis</strong> across platforms.
+                      </p>
+                      <span class="carousel-title-highlight">Why Choose Meta? </span>
+                      <p>Meta enables brands to:</p>
+                      <ul class="carousel-list-content">
+
+                        <li><strong>Track & compare performance</strong> across multiple e-commerce platforms.</li>
+                        <li><strong>Analyze market trends</strong> to stay ahead of competitors.</li>
+                        <li><strong>Optimize product listings & campaigns</strong> for better visibility and ROI.</li>
+                        <li><strong>Monitor share-of-voice (SOV) & brand presence</strong> for strategic growth.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel-content">
+                      <span class="carousel-title-highlight">Key Features</span>
+                      <ul class="carousel-list-content">
+                        <li><strong>Cross-Platform Intelligence (CPI)</strong> - A unified dashboard consolidating data
+                          across
+                          Amazon, Flipkart, Nykaa, and more.</li>
+                        <li><strong>Category Command (CC)</strong> - Deep insights into category performance and
+                          emerging
+                          trends.
+                        </li>
+                        <li><strong>Product Performance Precision (P3)</strong> - Detailed product-level analytics with
+                          alerts on
+                          underperforming and trending SKUs.</li>
+                        <li><strong>Competitive Radar (CR)</strong> - Real-time competitor analysis to refine pricing
+                          and
+                          marketing strategies.
+                        </li>
+                        <li><strong>SOV Boost (SB)</strong> - Tracks organic and sponsored share-of-voice to maximize
+                          campaign
+                          ROI.
+                        </li>
+                        <li><strong>Dynamic Trend Analytics (DTA)</strong> - AI-powered trend detection to identify key
+                          growth
+                          drivers.</li>
+                        <li><strong>Unified Brand Presence (UBP)</strong> - A complete view of online brand consistency
+                          across
+                          platforms.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="carousel-content">
+                      <span class="carousel-title-highlight">Benefits from Meta
+                      </span>
+                      <ul class="carousel-list-content">
+                        <li><strong>E-Commerce Managers </strong>- Gain real-time insights to optimize sales strategies.
+                        </li>
+                        <li><strong>Marketing Teams </strong>- Improve campaign performance and competitive positioning.
+                        </li>
+                        <li><strong>Brand Managers </strong>- Monitor brand visibility and share-of-voice across
+                          platforms.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-pagination swiper-pagination-child"></div>
+                <div class="swiper-button-prev child-nav"></div>
+                <div class="swiper-button-next child-nav"></div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination-parent"></div>
+      <div class="swiper-button-prev parent-nav"></div>
+      <div class="swiper-button-next parent-nav"></div>
+    </div>
+
+
+  </section>
+  <!--         
+        <div class="desc"><h3>Description about the tool/case studies</h3><br><br><br>
+            <button>Click to know more</button></div>  -->
+  <!-- ################################################# Explore Kie verse section Start ######################################################## -->
+
+
+  <section class="animated-section">
+    <div class="explore-kieverse">
+      <div class="banner">
+        <div class="banner-text" data-aos="fade-right">
+          <h2> Interested to explore our multiverse of Digital Marketing</h2>
+        </div>
+        <div data-aos="fade-left">
+          <a href="https://www.kieverse.ai/"><button class="banner-button">Explore KiEVerse.ai</button></a>
+          <!-- <div class="progress-line"></div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ################################################# Explore Kie verse section End ######################################################## -->
+
+    <!-- ################################################# Footer Start ######################################################## -->
+    <footer id="footer-container"></footer>
+   <!-- ######################################## Footer end ######################################################## -->
+    <script src="../Components/header/header.js"></script>
+    <script src="../Components/footer/footer.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.10/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({
+        duration: 1200, // Animation speed
+       once: true, // Animates only once
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var track = document.querySelector(".logo-track");
+      var copyLogos = track.cloneNode(true); // Clone the entire track
+
+      copyLogos.classList.add("cloned-track"); // Add a class for styling
+      document.querySelector(".logo-wrapper").appendChild(copyLogos); // Append cloned track
+
+      // Ensure both original and cloned tracks have the same spacing
+      document.querySelectorAll(".logo-track img").forEach(img => {
+        img.style.marginRight = "90px"; // Ensure consistent spacing
+      });
+
+      // Initialize Bootstrap tooltips
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    });
+
+  </script>
+  <script>
+
+    const data = [
+      {
+        title: "Decision Inteligence",
+        desc: "We help organizations navigate complex business landscapes with Decision Intelligence—an advanced approach that combines data science, machine learning, and domain expertise to automate and optimize decision-making processes. Our solutions not only guide leaders to make informed decisions but also ensure that these decisions align with the long-term strategic objectives of the organization. By integrating predictive analytics, scenario planning, and real-time data analysis, KiE Square empowers businesses to stay ahead of the competition and respond to market changes dynamically.",
+      },
+      {
+        title: "Big Data Analytics",
+        desc: "Harness the power of Big Data with KiE Square’s comprehensive analytics solutions. We transform vast, unstructured datasets into structured insights that are actionable and value-driven. Our team of experts utilizes scalable technologies and sophisticated analytics tools to process large volumes of data, uncover hidden patterns, and identify trends that can shape business strategies. Whether it’s customer behavior, operational efficiency, or market trends, our Big Data Analytics service helps organizations make data-backed decisions faster and more efficiently.",
+      },
+      {
+        title: "Solution implementation",
+        desc: "At KiE Square, we don’t just design data science solutions—we bring them to life. Our Solution Implementation service ensures that the insights and models we develop are seamlessly integrated into your existing workflows and systems. Our experienced team manages every step of the implementation process, from proof-of-concept development to full-scale deployment, ensuring that your organization can benefit from data-driven strategies without disruptions. We offer ongoing support to ensure continuous performance improvement and adaptation as your business evolves.",
+      },
+      {
+        title: "Data Mining",
+        desc: "Data Mining is at the heart of what we do. Our specialized data mining services help businesses discover valuable patterns and relationships in large datasets that may otherwise remain hidden. By applying advanced algorithms and machine learning techniques, we extract meaningful insights that can be used to drive operational efficiencies, enhance customer experience, and improve overall business performance. Whether it’s market basket analysis, customer segmentation, or anomaly detection, our data mining services provide actionable intelligence that supports strategic decision-making.",
+      },
+    ];
+    document.addEventListener("DOMContentLoaded", function () {
+      const circles = document.querySelectorAll(".circle");
+      const title = document.getElementById("title");
+      const description = document.getElementById("description");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalDescription = document.getElementById("modalDescription");
+      let currentIndex = 0;
+      let interval = setInterval(autoRotate, 4000);
+
+      function updateContent(index, isModal = false) {
+        if (isModal) {
+          modalTitle.textContent = data[index].title;
+          modalDescription.innerHTML = data[index].desc.replace(/\.\s*/g, ".<br><br>");
+        } else {
+          circles.forEach((circle) => circle.classList.remove("active"));
+          circles[index].classList.add("active");
+          title.classList.remove("zoom-in");
+          description.classList.remove("zoom-in");
+          setTimeout(() => {
+            title.textContent = data[index].title;
+            description.innerHTML = data[index].desc.replace(
+              /\.\s*/g,
+              ".<br><br>"
+            );
+            title.classList.add("zoom-in");
+            description.classList.add("zoom-in");
+          }, 200);
+        }
+      }
+
+      function autoRotate() {
+        currentIndex = (currentIndex + 1) % circles.length;
+        updateContent(currentIndex);
+      }
+
+      circles.forEach((circle) => {
+        circles.forEach((circle) => {
+          circle.addEventListener("click", function () {
+            currentIndex = parseInt(this.getAttribute("data-index"));
+
+            if (window.innerWidth <= 768) {
+              // Show modal on mobile
+              updateContent(currentIndex, true);
+              let modal = new bootstrap.Modal(document.getElementById("infoModal"));
+              modal.show();
+            } else {
+              // Update inline content for larger screens
+              updateContent(currentIndex);
+            }
+          });
+        });
+
+        circle.addEventListener("mouseenter", () => {
+          clearInterval(interval); // Stop auto-rotation when hovered
+          interval = null; // Prevent multiple intervals
+        });
+
+        circle.addEventListener("mouseleave", () => {
+          if (!interval) {
+            interval = setInterval(autoRotate, 4000); // Restart only if it was stopped
+          }
+        });
+
+        circle.addEventListener("click", () => {
+          clearInterval(interval); // Stop rotation on click
+          interval = null;
+          currentIndex = parseInt(circle.getAttribute("data-index"));
+          updateContent(currentIndex);
+        });
+      });
+
+      updateContent(currentIndex);
+    });
+  </script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+      const modal = document.getElementById("infoModal");
+
+      // Listen for when the modal is completely hidden
+      modal.addEventListener("hidden.bs.modal", function () {
+        document.querySelectorAll(".modal-backdrop").forEach((backdrop) => {
+          backdrop.remove(); // Remove any lingering backdrops
+        });
+        document.body.classList.remove("modal-open"); // Remove the class that prevents scrolling
+      });
+    });</script>
+  <!-- #################### Kie Verse Start ################ -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.5 } // 50% section visible hone par trigger hoga
+      );
+
+      let section = document.querySelector(".explore-kieverse");
+      observer.observe(section);
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector(".hamburger");
+
+      if (hamburger) {
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+        });
+      }
+    });
+  </script>
+  <script>
+    new Swiper(".parent-slider", {
+      loop: true,
+      slidesPerView: 1,
+      noSwiping: true,
+      centeredSlides: true,
+      spaceBetween: 30,
+      // pagination: {
+      //   el: '.swiper-pagination-parent',
+      //   clickable: true,
+      // },
+      pagination: ".swiper-pagination-parent",
+      navigation: {
+        nextEl: ".swiper-button-next.parent-nav",
+        prevEl: ".swiper-button-prev.parent-nav",
+      },
+    });
+
+    new Swiper(".child-slider", {
+      loop: true,
+      slidesPerView: 1,
+      noSwiping: false,
+      pagination: ".swiper-pagination-child",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+  </script>
+  <script>
+    document.getElementById('scheduleContainer').addEventListener('submit', async function (e) {
+      if (!e.target.classList.contains('emailDemo')) return; // Ensure it's a form submit event
+      e.preventDefault();
+
+      const form = e.target; // Get the form that was submitted
+      const emailInput = form.querySelector('.scheduleEmail').value.trim(); // Get input field inside the form
+
+      if (!emailInput) {
+        alert('Email field cannot be empty');
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput)) {
+        alert('Please enter a valid email address');
+        return;
+      }
+
+      const formData = { email: emailInput };
+      console.log(formData);
+
+      try {
+        const response = await fetch('https://m594bmgj-8080.inc1.devtunnels.ms/api/v1/demo-scheduler', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          alert('Form submitted successfully!');
+          console.log('data', data);
+        } else {
+          throw new Error('Failed to submit the form');
+        }
+      } catch (error) {
+        alert(error.message);
+        console.error(error);
+      }
+    });
+
+  </script>
+</body>
+
+</html>

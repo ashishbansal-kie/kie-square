@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+
+.gray-background{
+    background-color: rgb(251, 246, 251);
+  
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Background of the button */
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+
+.section-main-heading {
+    color: #a33d3d;
+    margin-bottom: 30px;
+    position: relative;
+   font-family: Abril Fatface;
+    font-weight: 500;
+    /* font-style: normal; */
+    font-size: 3rem !important;
+
+}
+
+.section-main-heading::before,
+.section-main-heading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 300px;
+    height: 2px;
+    background-color: #a33d3d;
+}
+
+.section-main-heading::before {
+    left: -320px;
+}
+
+.section-main-heading::after {
+    right: -320px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+
+    .section-main-heading::before,
+    .section-main-heading::after {
+        width: 80px;
+    }
+
+    .section-main-heading::before {
+        left: -90px;
+    }
+
+    .section-main-heading::after {
+        right: -90px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .section-main-heading::before,
+    .section-main-heading::after {
+        width: 60px;
+    }
+
+    .section-main-heading::before {
+        left: -70px;
+    }
+
+    .section-main-heading::after {
+        right: -70px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .section-main-heading::before,
+    .section-main-heading::after {
+        width: 40px;
+    }
+
+    .section-main-heading::before {
+        left: -50px;
+    }
+
+    .section-main-heading::after {
+        right: -50px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .section-main-heading::before,
+    .section-main-heading::after {
+        display: none;
+        /* Hide the lines on smaller screens */
+    }
+}
+/* life at kie first section start*/
+
+  .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .mySwiper2 {
+      height: 600px; /* or 60vh */
+  width: 95%;
+    }
+.mySwiper2 .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper2 .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+    .mySwiper {
+  width: 95%;
+  height: 120px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 20% !important;
+  height: 100%;
+  opacity: 0.6;
+  background-color: #000 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.mySwiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ .swiper-pagination-bullet {
+  width: 18px;
+  height: 18px;
+  background: #000; /* Change color if needed */
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff; /* Active bullet color */
+  opacity: 1;
+}
+
+.swiper-slide-active {
+  width: 60% !important; /* Width for the active (current) slide */
+  opacity: 1; /* Make it fully visible */
+  z-index: 2; /* Bring it to the front */
+}
+
+.swiper-slide-prev, .swiper-slide-next {
+  width: 20% !important; /* Smaller width for the previous and next slides */
+  opacity: 0.5; /* Slightly faded for non-active slides */
+}
+/* life at kie first section end*/
+
+  .kie-activity-container{
+    position: relative;
+    height: 380px;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgb(213, 208, 208);
+  }
+  .kie-activity-container img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .kie-activity-container:hover{
+    box-shadow: 0 0 20px maroon, 0 0 10px white;
+  }
+
+  .kie-activity-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(127, 5, 5), #df7b7b);
+    /* background: rgba(0, 0, 0, 0.8); */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    overflow-y: auto;
+    z-index: 2; /* Ensure it's above the image */
+  }
+
+  .kie-activity-container:hover .kie-activity-content{
+    opacity: 1;
+  }
+  .kie-activity-title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 250, 245, 0.6);
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #c91000 !important;
+    /* z-index: 3; */
+  }
+/*    
+  .kie-activities-img-container {
+    height: 280px; 
+    overflow: hidden;
+  }
+
+  .kie-activities-img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0%;
+  }
+  .card{
+    border: none;
+    border-radius: 0%;
+   width: 83%;
+  }
+  .card-body .card-text{
+    color:#575757;
+  } */
